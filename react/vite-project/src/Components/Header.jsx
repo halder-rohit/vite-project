@@ -7,7 +7,7 @@ const lick=() => {teamRef.current.scrollIntoView ({behavior:"smooth"})}
 const cick=() => {contactRef.current.scrollIntoView ({behavior:"smooth"})}
     return<div>
 <div className="bg-green-700 bg-[url(image/photo.jpeg)]">
-    <div className="sticky w-screen bg-green-700">
+    <div className="fixed w-screen bg-green-700">
         <nav className=" flex justify-center">
             <div className="flex justify-between  w-5/6 py-8  text-white">
                 <a href="/" className="text-amber-400">
@@ -15,10 +15,10 @@ const cick=() => {contactRef.current.scrollIntoView ({behavior:"smooth"})}
                 </a>
                 {/* <HeaderComponent productRef={productRef}/> */}
                 <ul className="flex gap-5">
-                    <li> <button onClick={click} className="hover:text-yellow-500 font-myFont2 ">PRODUCTS</button></li>
+                    <li> <button onClick={click} className="hover:text-yellow-500 font-myFont2 focus:bg-yellow-300">PRODUCTS</button></li>
                     <li> <a className="hover:text-yellow-500 font-myFont2">ABOUT US</a></li>
-                    <li> <button onClick={lick}className="hover:text-yellow-500 font-myFont2" >TEAM</button></li>
-                    <li> <button onClick={cick}className="hover:text-yellow-500 font-myFont2">CONTACT</button></li>
+                    <li> <button onClick={lick}className="hover:text-yellow-500 font-myFont2 focus:bg-yellow-300" >TEAM</button></li>
+                    <li> <button onClick={cick}className="hover:text-yellow-500 font-myFont2 focus:bg-yellow-300">CONTACT</button></li>
                     <a href="./signin" className="hover:text-yellow-500 font-myFont2" >SIGN IN</a>
                 </ul>
             </div>

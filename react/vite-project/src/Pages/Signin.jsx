@@ -1,4 +1,4 @@
-import { Logo } from "../image/logo" 
+import { Logo } from "../Components/Icons/logo" 
 import { useNavigate } from "react-router-dom"
 export function SignIn(){
         const navigate = useNavigate()
