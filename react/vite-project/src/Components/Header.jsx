@@ -1,11 +1,11 @@
 import { useRef } from 'react'
 import { SignIn } from '../Pages/Signin'
-import { Button, Button1 } from './Button'
+import { Button1 } from './Button'
 export function Header({ productRef, teamRef, contactRef }) {
 
-    const click = () => { productRef.current.scrollIntoView({ behavior: "smooth" }) }
-    const lick = () => { teamRef.current.scrollIntoView({ behavior: "smooth" }) }
-    const cick = () => { contactRef.current.scrollIntoView({ behavior: "smooth" }) }
+    const productScroll = () => { productRef.current.scrollIntoView({behavior: "smooth"} ) }
+    const teamScroll = () => { teamRef.current.scrollIntoView({ behavior: "smooth" }) }
+    const contactScroll = () => { contactRef.current.scrollIntoView({ behavior: "smooth" }) }
     return <div>
         <div className="bg-[url(image/photo.jpeg)]">
             <div className="fixed w-screen bg-green-700">
@@ -16,11 +16,11 @@ export function Header({ productRef, teamRef, contactRef }) {
                         </a>
                         {/* <HeaderComponent productRef={productRef}/>  */}
                         <ul className="flex gap-3">
-                            <li> <Button onClick={click} name="PRODUCTS"/></li>
-                            <li> <Button name="ABOUT US"/></li>
-                            <li> <Button onClick={lick} name="TEAM" /></li>
-                            <li> <Button onClick={cick} name="CONTACT US" /></li>
-                            <li> <Button target="_blank" href="./signin" name="SIGN IN" /> </li>
+                            <li> <a onClick={productScroll} className="hover:not-active:bg-yellow-500 font-myFont2 focus:bg-yellow-300  rounded-lg p-5">PRODUCT</a></li>
+                            <li> <a className="hover:not-active:bg-yellow-500 font-myFont2 focus:bg-yellow-300  rounded-lg p-5">ABOUT</a></li>
+                            <li> <a className="hover:not-active:bg-yellow-500 font-myFont2 focus:bg-yellow-300  rounded-lg p-5" >TEAM</a></li>
+                            <li> <a className="hover:not-active:bg-yellow-500 font-myFont2 focus:bg-yellow-300  rounded-lg p-5">CONTACT US</a></li>
+                            <li> <a target="_blank" href="./signin" name="SIGN IN" > </a></li>
                         </ul>
                     </div>
                 </nav>
