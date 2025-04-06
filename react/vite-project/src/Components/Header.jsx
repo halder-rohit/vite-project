@@ -19,7 +19,7 @@ export function Header({ productRef, teamRef, contactRef }) {
                             <li> <Button onClick={click} name="PRODUCTS"/></li>
                             <li> <Button name="ABOUT US"/></li>
                             <li> <Button onClick={lick} name="TEAM" /></li>
-                            <li> <Button onClick={cick} name="CONTACT" /></li>
+                            <li> <Button onClick={cick} name="CONTACT US" /></li>
                             <li> <Button target="_blank" href="./signin" name="SIGN IN" /> </li>
                         </ul>
                     </div>
