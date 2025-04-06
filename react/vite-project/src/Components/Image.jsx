@@ -6,3 +6,10 @@ export function Image(props){
         <a target="_blank" href={props.link}><Linkedin/></a>
     </div>
 }
+ export function Image1(props){
+    return <div className="flex-col justify-items-center">
+    <img src={props.src} className="h-28 w-30"></img>
+    <p  className="font-bold" >{props.name}</p>
+    <p>{props.description}</p>
+    </div>
+ }
