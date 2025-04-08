@@ -1,7 +1,7 @@
 import { Button2 } from "./Button";
 
 export function Contact({ contactRef }) {
-    return <div className="bg-slate-600 py-20">
+    return <div className="bg-[url(/image.jpg)] py-20">
         <div className="space-y-28 ">
             <p className="flex justify-center text-4xl font-bold font-myFont2 text-white" ref={contactRef}>CONTACT US</p>
             <div className="flex justify-center">
